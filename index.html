@@ -81,31 +81,38 @@
       background-color: #ef4444;
     }
 
-    /* ✅ Mobile Responsive Styles */
     @media (max-width: 400px) {
-      .calculator-container {
-        width: 90%;
-        padding: 20px 15px;
-      }
+  .calculator-container {
+    width: 95%;
+    padding: 20px 15px;
+  }
 
-      .calculator-container h1 {
-        font-size: 20px;
-      }
+  .calculator-container h1 {
+    font-size: 20px;
+  }
 
-      #display {
-        font-size: 18px;
-        padding: 12px;
-      }
+  #display {
+    font-size: 18px;
+    padding: 12px;
+  }
 
-      .button-grid button,
-      .clear {
-        padding: 12px;
-        font-size: 16px;
-      }
+  .button-grid {
+    gap: 10px;
+  }
 
-      .button-grid {
-        gap: 10px;
-      }
+  .button-grid button,
+  .clear {
+    font-size: 16px;
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Keeps buttons perfectly round */
+    padding: 0; /* Reset padding to rely on width/height */
+  }
+
+  .clear {
+    border-radius: 30px;
+    background-color: #f87171 !important; /* Keep original red */
+    padding: 15px;
+  }
     }
   </style>
 </head>
