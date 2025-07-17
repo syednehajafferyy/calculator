@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Calculator</title>
   <style>
-      * {
+    * {
       box-sizing: border-box;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
@@ -79,6 +79,33 @@
 
     .clear:hover {
       background-color: #ef4444;
+    }
+
+    /* ✅ Mobile Responsive Styles */
+    @media (max-width: 400px) {
+      .calculator-container {
+        width: 90%;
+        padding: 20px 15px;
+      }
+
+      .calculator-container h1 {
+        font-size: 20px;
+      }
+
+      #display {
+        font-size: 18px;
+        padding: 12px;
+      }
+
+      .button-grid button,
+      .clear {
+        padding: 12px;
+        font-size: 16px;
+      }
+
+      .button-grid {
+        gap: 10px;
+      }
     }
   </style>
 </head>
